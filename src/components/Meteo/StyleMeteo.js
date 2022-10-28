@@ -5,6 +5,7 @@ const window = Dimensions.get('window').width
 export const styleMeteo = StyleSheet.create({
 
     container: {
+        
         display : "flex",
         position: 'relative',
         top : 0,
@@ -12,29 +13,76 @@ export const styleMeteo = StyleSheet.create({
         paddingHorizontal: 10,
         height : "75%",
         width: "100%",
-        backgroundColor : "lightblue",
         borderBottomLeftRadius : 50,
-        borderBottomRightRadius : 50
+        borderBottomRightRadius : 50,
+        alignItems: "center"
+    },
+    city: {
+        fontSize: 30,
     },
     button: {
-        width: "50%",
+        width: "25%",
         alignItems: 'center',
         justifyContent: 'center',
-        paddingVertical: 12,
-        paddingHorizontal: 32,
-        borderRadius: 4,
-        elevation: 3,
-        backgroundColor: 'black',
+        paddingVertical: 1,
+        paddingHorizontal: 5,
+        marginVertical: 10,
+        borderRadius: 15,
+        borderWidth: 2,
+        borderColor: "white"
     },
     text: {
-        fontSize: 16,
+        fontSize: 12,
         lineHeight: 21,
-        fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'white',
     },
     image : {
-        height:"25%",
-        width:"50%"
+        marginTop: 30,
+        height:"20%",
+        width:"75%",
+
+    },
+    temp: {
+        fontSize: 120,
+        fontWeight : "bold",
+        letterSpacing: 0.25,
+        color: 'white',
+        
+        alignSelf: 'center'
+    },
+    title: {
+        fontSize: 40,
+        letterSpacing: 0.15,
+        color: 'white',
+        textAlign: 'center'
+    },
+    underTitle: {
+        fontSize: 20,
+        letterSpacing: 0.15,
+        color: '#9FA2A3',
+        width: '100%',
+        alignSelf: 'center'
+    },
+    bottom: {
+        position: 'absolute',
+        bottom: 20,
+        width: "100%",
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingHorizontal: 10
+    },
+    bottomText: {
+        textAlign:'center'
+    },
+    titleDot: {
+        display: "flex",
+        flexDirection: 'row'
+    },
+    LEDOTDARKSASUKE : {
+        color : "#9FA2A3",
+        marginTop: 10,
+        fontSize: 50
     }
 });

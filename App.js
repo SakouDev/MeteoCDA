@@ -3,6 +3,9 @@ import {  StyleSheet, View } from 'react-native';
 import Meteo from './src/components/Meteo/Meteo';
 
 export default function App() {
+
+
+    
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
@@ -14,7 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#303030',
         alignItems: 'center',
     },
     image : {
