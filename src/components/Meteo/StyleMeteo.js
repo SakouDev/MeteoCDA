@@ -5,7 +5,6 @@ const window = Dimensions.get('window').width
 export const styleMeteo = StyleSheet.create({
 
     container: {
-        
         display : "flex",
         position: 'relative',
         top : 0,
@@ -19,6 +18,7 @@ export const styleMeteo = StyleSheet.create({
     },
     city: {
         fontSize: 30,
+        color: 'white'
     },
     button: {
         width: "25%",
@@ -38,7 +38,6 @@ export const styleMeteo = StyleSheet.create({
         color: 'white',
     },
     image : {
-        marginTop: 30,
         height:"20%",
         width:"75%",
 
@@ -71,10 +70,14 @@ export const styleMeteo = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 10
+        paddingRight: 25
+    },
+    bottomDiv:{
+        width:"33%"
     },
     bottomText: {
-        textAlign:'center'
+        textAlign:'center',
+        marginBottom: 3
     },
     titleDot: {
         display: "flex",
