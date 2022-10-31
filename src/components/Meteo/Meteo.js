@@ -1,13 +1,13 @@
 import {styleMeteo} from './StyleMeteo'
 import { Pressable, Image, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import dayjs from 'dayjs'
+require("dayjs/locale/fr")
 
 export default function Meteo({data, setLoading,current}) {
 
-
-
     return (
-        <LinearGradient style={styleMeteo.container} colors={['#10b2fc', '#1075f5']} start={{ y: 1 }} end={{ y: 0 }}>
+        <LinearGradient style={styleMeteo.container} colors={['#10b2fc', '#1075f5']}>
 
             <Text style={styleMeteo.city}>{data.city.name}</Text>
             <Pressable style={styleMeteo.button} onPress={() => {setLoading(true)}}>
@@ -26,7 +26,7 @@ export default function Meteo({data, setLoading,current}) {
                 <Text style={styleMeteo.LEDOTDARKSASUKE}>°</Text>
             </View>    
                 <Text style={styleMeteo.title}>{data.list[current].weather[0].main}</Text>
-                <Text style={styleMeteo.underTitle}>{data.list[current].dt_txt}</Text>
+                <Text style={styleMeteo.underTitle}>{dayjs(data.list[current].dt_txt).locale('fr').format('dddd D MMM')}</Text>
             </View>
             <View style={styleMeteo.bottom}>
                 <View style={styleMeteo.bottomDiv}>
@@ -41,7 +41,7 @@ export default function Meteo({data, setLoading,current}) {
                 </View>
                 <View>
                     <Text style={styleMeteo.bottomText}>🌧️</Text>
-                    <Text style={styleMeteo.bottomText}>{data.list[current].rain ? data.list[current].rain["3h"] * 100 : 0}%</Text>
+                    <Text style={styleMeteo.bottomText}>{data.list[current].pop * 100}%</Text>
                     <Text style={styleMeteo.bottomText}>Chance of rain</Text>
                 </View>
             </View>

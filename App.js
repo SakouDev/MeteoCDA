@@ -17,9 +17,6 @@ export default function App() {
     const [current, setCurrent] = useState(0)
     const [nextDays, setNextDays] = useState(false)
 
-    console.log(current)
-
-
     useEffect(() => {
         (async () => {
             setData(null)
@@ -33,17 +30,21 @@ export default function App() {
     useEffect(() => {
         ApiService.get(location.latitude, location.longitude)
         .then(response => setData(response.data))
-        .then(setLoading(false))
         .catch(error => console.log(error))
         // console.log(data)
     }, [location])
 
+    setTimeout(() => {
+        setLoading(false)
+    }, 4000)
+
+
     if(loading || data == null) return (
-        <Loader />
+        <Loader/>
     )
     
     if(nextDays || data == null) return (
-        <MeteoNextDays data={data}/>
+        <MeteoNextDays setNextDays={setNextDays} data={data}/>
     )
 
     return (

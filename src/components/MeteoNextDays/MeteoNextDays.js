@@ -3,15 +3,17 @@ import { View, Text, Pressable } from "react-native";
 import { styleMeteoNextDays } from "./styleMeteoNextDays";
 
 import Loader from '../Loader/Loader';
-import MeteoCard from "../MeteoCard/MeteoCard";
+import MeteoCardDays from "../MeteoCard copy/MeteoCardDays";
 import MeteoSelected from "../MeteoSelected/MeteoSelected";
 
-export default function MeteoNextDays({ setNextDays, data }) {
+
+export default function MeteoNextDays({ data, setNextDays }) {
   let tab = [];
-  // console.log(data)
+  // console.log("data",data)
   const [distinc, setDistinc] = useState([]);
   const [loading, setLoading] = useState(true);
   const [current, setCurrent] = useState(0);
+
   useEffect(() => {
     let a = [];
 
@@ -27,26 +29,27 @@ export default function MeteoNextDays({ setNextDays, data }) {
       }
     }
     setDistinc(a);
-    setLoading(false);
+    setLoading(false)
   }, []);
+
+  
 
   if(loading || data == null) return (
     <Loader />
   )
-
-  // console.log(distinc.length);
-  // console.log(tab);
-  console.log(current);
+    
+  // console.log("distinc",distinc)
+  // console.log("current",current);
   return (
     <View style={styleMeteoNextDays.container}>
       
       <MeteoSelected setNextDays={setNextDays} data={distinc[current]} />
-
+      
       <View style={styleMeteoNextDays.day}>
-        {distinc?.map((data, i) => (
+        {distinc.map((data, i) => (
           <View key={i}>
             <Pressable key={i} onPress={() => setCurrent(i)}>
-              <MeteoCard
+              <MeteoCardDays
                 key={i}
                 data={data}
                 css={current == i ? "current" : ""}

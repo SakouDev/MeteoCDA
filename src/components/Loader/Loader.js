@@ -1,15 +1,16 @@
 import React from 'react'
-import { View, Image } from 'react-native'
-
+import { View , Image, ImageBackground } from 'react-native'
 import {styleLoader} from './StyleLoader'
 
 export default function Loader() {
   return (
-    <View style={styleLoader.container}>
+      <ImageBackground 
+        style={styleLoader.container}
+        source={require('../../assets/img/circle2.gif')} >
         <Image
             style = {styleLoader.image}
-            source={require('../../assets/img/loading.gif')} 
+            source={require('../../assets/img/loading-final.gif')} 
         />
-    </View>
+      </ImageBackground>
   )
 }

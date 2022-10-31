@@ -22,14 +22,8 @@ export const styleMeteoCard = StyleSheet.create({
         fontWeight: "bold"
     }, 
     current : {
-        marginHorizontal:6,
-        height: 100,
-        width: 80,
-        backgroundColor: "#1493FC",
-        textAlign: "center",
-        borderColor: "black",
-        borderWidth: 1,
+        backgroundColor: "#1075f5",
         borderRadius: 30,
-        alignItems: "center",
-    }
+        elevation : 20
+    },
 });

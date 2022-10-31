@@ -38,12 +38,11 @@ export const styleMeteo = StyleSheet.create({
         color: 'white',
     },
     image : {
-        height:"20%",
+        height:"27%",
         width:"75%",
-
     },
     temp: {
-        fontSize: 120,
+        fontSize: 100,
         fontWeight : "bold",
         letterSpacing: 0.25,
         color: 'white',
@@ -85,7 +84,9 @@ export const styleMeteo = StyleSheet.create({
     },
     LEDOTDARKSASUKE : {
         color : "#9FA2A3",
-        marginTop: 10,
+        position: 'relative',
+        top: 20,
+        left: 5,
         fontSize: 50
     }
 });

@@ -6,7 +6,7 @@ export const styleMeteoSlider = StyleSheet.create({
     container : {
         height: "24%",
         width: "100%",
-        padding: 10
+        paddingHorizontal: 10
     },
     scrollview: {
         justifyContent:'center'

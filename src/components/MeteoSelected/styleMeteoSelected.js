@@ -9,14 +9,23 @@ export const styleMeteoSelected = StyleSheet.create({
         position: 'relative',
         flexDirection: "row",
         top : 0,
-        height : "40%",
+        height : "35%",
         width: "100%",
         borderBottomLeftRadius : 50,
         borderBottomRightRadius : 50,
     },
     image : {
-        height:"25%",
-        width:"45%",
+        height:"45%",
+        width:"50%",
+        position:'relative',
+        top: '10%',
+        marginTop: "5%"
+    },
+    tempgroup: {
+        position:'relative',
+        top: '5%',
+        right: '3%',
+        marginTop: "3%"
     },
     tempMax: {
         fontSize: 60,
@@ -28,16 +37,30 @@ export const styleMeteoSelected = StyleSheet.create({
         fontSize: 45,
         fontWeight : "bold",
         letterSpacing: 0.25,
-        color: 'grey',
+        color: '#B5BDC8',
+        marginTop : 18
+    }, 
+    LEDOTDARKSASUKE : {
+        color : "white",
+        marginTop: 10,
+        fontSize: 40
     },
     titleDot: {
         display: "flex",
         flexDirection: 'row'
     },
-    LEDOTDARKSASUKE : {
-        color : "#9FA2A3",
-        marginTop: 10,
-        fontSize: 30
+    title: {
+        fontSize: 35,
+        letterSpacing: 0.15,
+        color: 'white',
+        textAlign: 'center'
+    },
+    underTitle: {
+        fontSize: 20,
+        letterSpacing: 0.15,
+        color: '#9FA2A3',
+        width: '100%',
+        textAlign: "center"
     },
     bottom: {
         position: 'absolute',
@@ -55,5 +78,11 @@ export const styleMeteoSelected = StyleSheet.create({
         textAlign:'center',
         marginBottom: 3
     },
+    arrowBack : {
+        fontSize: 60,
+        position: 'absolute',
+        top: -30,
+        color: "white"
+    }
 
 })

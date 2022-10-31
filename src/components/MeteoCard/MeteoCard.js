@@ -3,7 +3,7 @@ import { styleMeteoCard } from "./styleMeteoCard";
 
 export default function MeteoCard({data, css}) {
   return (
-    <View style={css == "" ? styleMeteoCard.card : styleMeteoCard.current}>
+    <View style={css == "" ? styleMeteoCard.card : [styleMeteoCard.card,styleMeteoCard.current]}>
         <Text style={styleMeteoCard.text}>{Math.round(data.main.temp)}°</Text>
             <Image
                 style={styleMeteoCard.tinyLogo}

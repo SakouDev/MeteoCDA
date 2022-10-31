@@ -5,12 +5,12 @@
     "slug": "meteocda",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/img/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./src/assets/img/icon-OP.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./src/assets/img/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./src/assets/img/icon-OP.png",
+      "resizeMode": "cover",
+      "backgroundColor": "black"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,12 +23,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/img/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./src/assets/img/icon-OP.png",
+        "backgroundColor": "black"
       }
     },
     "web": {
-      "favicon": "./src/assets/img/favicon.png"
+      "favicon": "./src/assets/img/icon-OP.png"
     }
   }
 }
