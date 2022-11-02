@@ -32,7 +32,7 @@ export const styleMeteoNextDays = StyleSheet.create({
       backgroundColor: "blue"
    },
    day : {
-      height: "70%",
+      height: "65%",
       width : "100%",
    }
 });

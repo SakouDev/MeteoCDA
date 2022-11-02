@@ -1,5 +1,7 @@
 import { Dimensions, StyleSheet } from "react-native";
 
+let ScreenHeight = Dimensions.get("window").height;
+
 export const styleMeteoCardDays = StyleSheet.create({
     tinyLogo: {
         width: "25%",
@@ -10,7 +12,7 @@ export const styleMeteoCardDays = StyleSheet.create({
         flexDirection: "row",
         paddingHorizontal: '10%',
         marginTop:5,
-        height: 100,
+        height : ScreenHeight/8,
         width: '100%',
         alignItems: "center",
         justifyContent: "space-between",
@@ -23,7 +25,7 @@ export const styleMeteoCardDays = StyleSheet.create({
     text : {
         color: "white",
         fontWeight: "bold",
-        width: "18%"
+        width: "20%"
     }, 
     textTitle : {
         position: 'relative',

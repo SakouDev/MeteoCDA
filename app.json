@@ -5,15 +5,16 @@
     "slug": "meteocda",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/img/icon-OP.png",
+    "icon": "./src/assets/img/iconLuffy.png",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./src/assets/img/icon-OP.png",
+      "image": "./src/assets/img/iconLuffy.png",
       "resizeMode": "cover",
       "backgroundColor": "#000000"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/3ce46caa-fe87-4ca2-bcae-40a03d9c3336"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -24,13 +25,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/img/icon-OP.png",
+        "foregroundImage": "./src/assets/img/iconLuffy.png",
         "backgroundColor": "#000000"
       },
       "package": "com.sakuto62.meteocda"
     },
     "web": {
-      "favicon": "./src/assets/img/icon-OP.png"
+      "favicon": "./src/assets/img/iconLuffy.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3ce46caa-fe87-4ca2-bcae-40a03d9c3336"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }
