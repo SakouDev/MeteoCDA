@@ -3,7 +3,7 @@ import { View, Text, Pressable } from "react-native";
 import { styleMeteoNextDays } from "./styleMeteoNextDays";
 
 import Loader from '../Loader/Loader';
-import MeteoCardDays from "../MeteoCard copy/MeteoCardDays";
+import MeteoCardDays from "../MeteoCardDays/MeteoCardDays";
 import MeteoSelected from "../MeteoSelected/MeteoSelected";
 
 

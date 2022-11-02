@@ -10,7 +10,7 @@
     "splash": {
       "image": "./src/assets/img/icon-OP.png",
       "resizeMode": "cover",
-      "backgroundColor": "black"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -19,13 +19,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sakuto62.meteocda"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/img/icon-OP.png",
-        "backgroundColor": "black"
-      }
+        "backgroundColor": "#000000"
+      },
+      "package": "com.sakuto62.meteocda"
     },
     "web": {
       "favicon": "./src/assets/img/icon-OP.png"
