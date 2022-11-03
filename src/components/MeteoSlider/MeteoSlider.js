@@ -9,7 +9,7 @@ export default function MeteoSlider({data, setCurrent, current, setNextDays}) {
         <View  style={styleMeteoSlider.scrollview}>
 
             <View style={styleMeteoSlider.SliderTop}>
-                <Text style={styleMeteoSlider.text}>Prochaine 24h :</Text>
+                <Text style={styleMeteoSlider.text}>Next 24h :</Text>
                 <Pressable onPress={() => (setNextDays(true))}>
                     <Text style={styleMeteoSlider.textRight}>5 Days→ </Text>
                 </Pressable>
